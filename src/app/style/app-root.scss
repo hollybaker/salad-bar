@@ -1,0 +1,24 @@
+/*.app-root-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+}*/
+
+.greeter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+}
+
+.display-recipe-container {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 100%;
+    background-color: bisque;
+}

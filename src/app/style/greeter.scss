@@ -1,0 +1,29 @@
+/*.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+}*/
+
+h1 {
+color: rgb(49, 48, 48);
+}
+
+.profile-pic {
+    width: 30px;
+    margin-left: 5px
+}
+
+.welcome-message {
+    color: rgb(44, 43, 43);
+    font-style: italic;
+    margin: 5px;
+}
+
+.my-account-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(44, 43, 43);
+    margin: 5px;
+}

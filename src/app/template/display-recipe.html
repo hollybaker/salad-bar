@@ -1,0 +1,13 @@
+<h1>{{recipe.name}}</h1>
+<ul>
+    <li *ngFor = 'let ingredient of recipe.ingredients'>
+        {{ingredient.quantity.value}} 
+        {{ingredient.quantity.optionalValue}} 
+        {{ingredient.quantity.unitOfMeasurement}} 
+        {{ingredient.name}}, 
+        {{ingredient.affix}}
+    </li>
+</ul>
+<img src='{{imageUrlRelativePath}}{{recipe.imageUrl}}' class='recipe-image'>
+
+
