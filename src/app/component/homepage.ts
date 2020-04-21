@@ -3,11 +3,11 @@ import { RecipeService } from '../service/recipe-service';
 import { Recipe } from '../interface/recipe';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: '../template/app-root.html',
-  styleUrls: ['../style/app-root.scss']
+  selector: 'homepage',
+  templateUrl: '../template/homepage.html',
+  styleUrls: ['../style/homepage.scss']
 })
-export class AppRoot {
+export class Homepage {
   private recipeService: RecipeService = new RecipeService();
   public recipes: Array<Recipe>;
   public recipe: Recipe;

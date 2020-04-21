@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppRoot } from './component/app-root';
 import { Greeter } from './component/greeter';
 import { DisplayRecipe } from './component/display-recipe';
 import { DropdownMenu } from './component/dropdown-menu';
+import { Homepage } from './component/homepage';
 
 @NgModule({
   declarations: [
-    AppRoot,
     Greeter,
     DisplayRecipe,
-    DropdownMenu
+    DropdownMenu,
+    Homepage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,7 @@ import { DropdownMenu } from './component/dropdown-menu';
   ],
   providers: [],
   bootstrap: [
-    AppRoot
+    Homepage
   ]
 })
 export class AppModule { }

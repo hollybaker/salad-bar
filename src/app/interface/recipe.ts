@@ -1,8 +1,8 @@
-import { RecipeIngredient } from './recipe-ingredient';
+import { Ingredient } from './ingredient';
 
 export interface Recipe { 
     id: number;
     name: string;
-    ingredients: Array<RecipeIngredient>;
+    ingredients: Array<Ingredient>;
     imageUrl: string;
 }

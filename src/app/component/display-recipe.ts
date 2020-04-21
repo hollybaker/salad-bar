@@ -9,6 +9,8 @@ import { Recipe } from '../interface/recipe';
 })
 export class DisplayRecipe { 
   @Input() public recipe: Recipe;
-
+  
   public imageUrlRelativePath: String = '../../assets/';
+
 }
+

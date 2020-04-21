@@ -1,5 +1,5 @@
 import { Recipe } from '../interface/recipe';
-import { Weights, Demonstratives, OptionalValues, Sillies } from '../interface/recipe-ingredient';
+import { Weights, Demonstratives, OptionalValues, Sillies } from '../interface/ingredient';
 
 export class RecipeService {
     private dummyRecipes: Array<Recipe> = [
