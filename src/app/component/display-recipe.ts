@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Injectable } from '@angular/core';
 import { Recipe } from '../interface/recipe';
+import { AppProvider } from '../provider/app-provider';
 
 
 @Component({
@@ -8,9 +9,13 @@ import { Recipe } from '../interface/recipe';
   styleUrls: ['../style/display-recipe.scss']
 })
 export class DisplayRecipe { 
-  @Input() public recipe: Recipe;
+  constructor(public appProvider: AppProvider) {}
+
+  @Input() 
+  public recipe: Recipe;
   
   public imageUrlRelativePath: String = '../../assets/';
+
 
 }
 

@@ -6,19 +6,24 @@ import { Greeter } from './component/greeter';
 import { DisplayRecipe } from './component/display-recipe';
 import { DropdownMenu } from './component/dropdown-menu';
 import { Homepage } from './component/homepage';
+import { MyAccount } from './component/my-account';
+import { AppProvider } from './provider/app-provider';
 
 @NgModule({
   declarations: [
     Greeter,
     DisplayRecipe,
     DropdownMenu,
-    Homepage
+    Homepage,
+    MyAccount
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AppProvider
+  ],
   bootstrap: [
     Homepage
   ]
