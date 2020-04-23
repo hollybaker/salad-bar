@@ -7,7 +7,9 @@ import { DisplayRecipe } from './component/display-recipe';
 import { DropdownMenu } from './component/dropdown-menu';
 import { Homepage } from './component/homepage';
 import { MyAccount } from './component/my-account';
-import { AppProvider } from './provider/app-provider';
+import { RecipeService } from './service/recipe-service';
+import { RecipeClient } from './client/recipe-client';
+import { AppRoot } from './component/app-root';
 
 @NgModule({
   declarations: [
@@ -15,17 +17,19 @@ import { AppProvider } from './provider/app-provider';
     DisplayRecipe,
     DropdownMenu,
     Homepage,
-    MyAccount
+    MyAccount,
+    AppRoot
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    AppProvider
+    RecipeService,
+    RecipeClient
   ],
   bootstrap: [
-    Homepage
+    AppRoot
   ]
 })
 export class AppModule { }

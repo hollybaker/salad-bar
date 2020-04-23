@@ -1,6 +1,6 @@
 import { Component, Input, Injectable } from '@angular/core';
 import { Recipe } from '../interface/recipe';
-import { AppProvider } from '../provider/app-provider';
+import { RecipeService } from '../service/recipe-service';
 
 
 @Component({
@@ -8,14 +8,19 @@ import { AppProvider } from '../provider/app-provider';
   templateUrl: '../template/display-recipe.html',
   styleUrls: ['../style/display-recipe.scss']
 })
+
+@Injectable()
 export class DisplayRecipe { 
-  constructor(public appProvider: AppProvider) {}
-
-  @Input() 
-  public recipe: Recipe;
-  
+  constructor(public recipeService: RecipeService) {}
   public imageUrlRelativePath: String = '../../assets/';
+  public recipe: Recipe;
 
-
+  ngOnInit() {
+    this.recipeService.selectedRecipe.subscribe((recipe) => {
+      this.recipe = recipe;
+    })
+  }
+  
+  
 }
 

@@ -1,5 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Recipe } from '../interface/recipe';
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'greeter',
@@ -7,9 +6,6 @@ import { Recipe } from '../interface/recipe';
   styleUrls: ['../style/greeter.scss']
 })
 export class Greeter {
-  @Input() public recipes: Array<Recipe>;
-  @Output() public selectedRecipe = new EventEmitter<number>();
-  
   public name: string;
 
   ngOnInit() {
@@ -18,9 +14,5 @@ export class Greeter {
 
   private setName(name: string) {
     this.name = name;  
-  }
-
-  public onSelectedRecipe(id: number) {
-    this.selectedRecipe.emit(id);
   }
 }

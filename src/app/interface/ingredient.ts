@@ -40,7 +40,9 @@ export enum Sillies {
     Slice = 'slice of',
     Slices = 'slices of',
     Clove = 'clove of',
-    Cloves = 'cloves of'
+    Cloves = 'cloves of',
+    Ball = 'ball of',
+    Balls = 'balls of'
 }
 
 export enum Spoons {

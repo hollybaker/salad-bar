@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, Injectable } from '@angular/core';
 import { Recipe } from '../interface/recipe';
-import { AppProvider } from '../provider/app-provider';
+import { RecipeService } from '../service/recipe-service';
 
 @Component({
   selector: 'dropdown-menu',
@@ -10,20 +10,16 @@ import { AppProvider } from '../provider/app-provider';
 
 @Injectable()
 export class DropdownMenu {
-  constructor(private appProvider: AppProvider) {}
-  // @Input() public recipes: Array<Recipe>;
-  // @Output() public selectedRecipe = new EventEmitter<number>();
-
-  public selectNewRecipe(recipe: Recipe) {
-    this.appProvider.setSelectedRecipe(recipe)
-  }
-  
+  constructor(private recipeService: RecipeService) {}
   public recipes: Array<Recipe>;
 
   ngOnInit() {
-    console.log(this.appProvider);
-    this.appProvider.recipesObservable.subscribe((recipes) => {
+    this.recipeService.recipes.subscribe((recipes) => {
       this.recipes = recipes;
     })
   }
+
+  public selectNewRecipe(recipe: Recipe) {
+    this.recipeService.setSelectedRecipe(recipe)
+  } 
 }

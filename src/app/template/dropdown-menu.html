@@ -2,7 +2,9 @@
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
         <a *ngFor='let recipe of recipes' 
-            (click)='selectNewRecipe(recipe)'>
+            (click)='selectNewRecipe(recipe)'
+            routerLink='/recipe'
+            routerLinkActive='active'>
             {{recipe.name}}
         </a>
     </div>
