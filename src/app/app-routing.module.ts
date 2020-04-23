@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DisplayRecipe } from './component/display-recipe';
 import { Homepage } from './component/homepage';
+import { MyAccount } from './component/my-account';
 
 
 const routes: Routes = [
-  { path: 'home', component: Homepage},
-  { path: 'recipe', component: DisplayRecipe},
+  { path: 'home', component: Homepage },
+  { path: 'recipe', component: DisplayRecipe },
+  { path: 'account', component: MyAccount },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home', pathMatch: 'full'}
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
+  
 ];
 
 @NgModule({
