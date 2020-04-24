@@ -1,8 +1,17 @@
 <div class="homepage-container">
 
-<div>
-    This is my Homepage
-</div>
-
+    <div class='homepage-recipes-container'>
+        <div 
+        *ngFor='let recipe of recipes' 
+        class='homepage-recipe-container' 
+        (click)='selectNewRecipe(recipe)'
+        routerLink='/recipe' 
+        routerLinkActive='active'> 
+            <div>
+                {{recipe.name}}
+            </div>
+            <img src="{{imageUrlRelativePath}}{{recipe.imageUrl}}" class='homepage-recipe-image'>
+        </div>
+    </div>
 
 </div>

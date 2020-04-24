@@ -9,7 +9,7 @@ export class RecipeClient {
                 "ingredients": [
                     {
                         "id": 0,
-                        "name": "Bacon",
+                        "name": "bacon",
                         "quantity": {
                             "value": Demonstratives.A,
                             "optionalValue": OptionalValues.Large,
@@ -20,14 +20,14 @@ export class RecipeClient {
                 
                     {
                         "id": 1,
-                        "name": 'Avocado',
+                        "name": 'avocado',
                         "quantity": {
                             "value": 1
                         }
                     },
                     {
                         "id": 2,
-                        "name": 'Bread',
+                        "name": 'bread',
                         "quantity": {
                             "value": 2,
                             "unitOfMeasurement": Sillies.Slices
@@ -43,21 +43,21 @@ export class RecipeClient {
                 "ingredients": [
                     {
                         "id": 3,
-                        "name": 'Cauliflower',
+                        "name": 'cauliflower',
                         "quantity": {
                             "value": 0.5
                         }
                     },
                     {
                         "id": 4,
-                        "name": 'Pomegranate',
+                        "name": 'pomegranate',
                         "quantity": {
                             "value": 1
                         }
                     },
                     {
                         "id": 5,
-                        "name": 'Pistachio nuts',
+                        "name": 'pistachio nuts',
                         "quantity": {
                             "value": 50,
                             "unitOfMeasurement": Weights.Gram
@@ -72,14 +72,14 @@ export class RecipeClient {
                 "ingredients": [
                     {
                         "id": 6,
-                        "name": "Peaches",
+                        "name": "peaches",
                         "quantity": {
                             "value": 6
                         }
                     },
                     {
                         "id": 7,
-                        "name": "Parma Ham",
+                        "name": "parma ham",
                         "quantity": {
                             "value": 12,
                             "unitOfMeasurement": Sillies.Slices
@@ -87,7 +87,7 @@ export class RecipeClient {
                     },
                     {
                         "id": 8,
-                        "name": "Buffalo Mozzarella",
+                        "name": "buffalo mozzarella",
                         "quantity": {
                             "value": 2,
                             "unitOfMeasurement": Sillies.Balls
@@ -102,21 +102,21 @@ export class RecipeClient {
                 "ingredients": [
                     {
                         "id": 9,
-                        "name": "Figs",
+                        "name": "figs",
                         "quantity": {
                             "value": 12
                         }
                     },
                     {
                         "id": 10,
-                        "name": "Oranges",
+                        "name": "oranges",
                         "quantity": {
                             "value": 2
                         }
                     },
                     {
                         "id": 11,
-                        "name": "Goat's Cheese",
+                        "name": "goat's cheese",
                         "quantity": {
                             "value": 150,
                             "unitOfMeasurement": Weights.Gram

@@ -1,0 +1,9 @@
+
+    <ul>
+        <li *ngFor = 'let ingredient of ingredients'>
+            {{ingredient.quantity.value}} 
+            {{ingredient.quantity.optionalValue}} 
+            {{ingredient.quantity.unitOfMeasurement}} 
+            {{ingredient.name}}
+        </li>
+    </ul>

@@ -10,6 +10,7 @@ import { MyAccount } from './component/my-account';
 import { RecipeService } from './service/recipe-service';
 import { RecipeClient } from './client/recipe-client';
 import { AppRoot } from './component/app-root';
+import { ShoppingBasket } from './component/shopping-basket';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoot } from './component/app-root';
     DropdownMenu,
     Homepage,
     MyAccount,
-    AppRoot
+    AppRoot,
+    ShoppingBasket
   ],
   imports: [
     BrowserModule,

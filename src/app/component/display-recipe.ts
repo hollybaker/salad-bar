@@ -1,6 +1,7 @@
 import { Component, Input, Injectable } from '@angular/core';
 import { Recipe } from '../interface/recipe';
 import { RecipeService } from '../service/recipe-service';
+import { Ingredient } from '../interface/ingredient';
 
 
 @Component({
@@ -21,6 +22,9 @@ export class DisplayRecipe {
     })
   }
   
+  public addIngredientsToShoppingBasket(ingredients: Array<Ingredient>) {
+    this.recipeService.addIngredientsToShoppingBasket(ingredients);
+  }
   
 }
 
