@@ -1,4 +1,4 @@
-<div class='selected-recipe-container'><h1>{{recipe.name}}</h1>
+<div *ngIf = 'recipe' class='selected-recipe-container'><h1>{{recipe.name}}</h1>
     <ul>
         <li *ngFor = 'let ingredient of recipe.ingredients'>
             {{ingredient.quantity.value}} 
@@ -9,5 +9,8 @@
         </li>
     </ul>
     <img src='{{imageUrlRelativePath}}{{recipe.imageUrl}}' class='recipe-image'>
+</div>
+
+<div *ngIf = '!recipe' class='selected-recipe-container'><h1>Please select a recipe from Menu</h1>
 </div>
 

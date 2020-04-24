@@ -1,0 +1,13 @@
+.greeter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(181, 235, 217);
+}
+
+.main-page-container {
+    height: 85%;
+}
